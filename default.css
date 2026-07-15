@@ -589,3 +589,27 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
+.cv-table {
+    border-collapse: collapse;
+}
+
+.cv-table td {
+    padding: 3px 6px;
+    vertical-align: top;
+}
+
+.cv-table td.label {
+    width: 180px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.cv-table td.colon {
+    width: 15px;
+    text-align: center;
+}
+
+.cv-table td.value {
+    padding-left: 5px;
+}
