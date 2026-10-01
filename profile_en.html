@@ -1,171 +1,230 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-
-Name       : Assembly
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20140330
-
+Original template: Assembly by TEMPLATED (http://templated.co)
+Released under the Creative Commons Attribution License.
 -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV | Yoshiyasu Ichikawa</title>
+  <meta name="description" content="Curriculum vitae of Yoshiyasu Ichikawa: education, research interests, and research experience.">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;display=swap" rel="stylesheet">
+  <link href="default.css" rel="stylesheet" type="text/css" media="all">
+  <link href="fonts.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    /* These rules apply only to this CV page. */
+    .cv-page .container {
+      width: min(1200px, calc(100% - 48px));
+    }
 
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+    .cv-content {
+      padding-left: 4em;
+      text-align: left;
+      line-height: 1.8;
+    }
 
+    /* Basic information and education on the left; portrait on the right. */
+    .cv-top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .cv-photo {
+      display: block;
+      width: 340px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .cv-details {
+      display: grid;
+      grid-template-columns: 145px minmax(0, 1fr);
+      column-gap: 16px;
+      row-gap: 4px;
+      margin: 0;
+    }
+
+    .cv-details dt {
+      font-weight: bold;
+    }
+
+    .cv-details dd {
+      min-width: 0;
+      margin: 0;
+    }
+
+    .cv-section {
+      margin-top: 28px;
+    }
+
+    .cv-section h3 {
+      margin: 0 0 10px;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .cv-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .cv-list li {
+      display: grid;
+      grid-template-columns: 175px minmax(0, 1fr);
+      column-gap: 20px;
+      margin-bottom: 8px;
+    }
+
+    .cv-education li {
+      grid-template-columns: 70px minmax(0, 1fr);
+    }
+
+    .cv-date {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Keep the existing header usable on narrower screens. */
+    @media (max-width: 1150px) {
+      .cv-page #header-wrapper2 { padding: 3em 0; }
+      .cv-page #header { padding: 0; text-align: center; }
+      .cv-page #logo,
+      .cv-page #menu { position: static; }
+      .cv-page #menu { margin-top: 28px; }
+      .cv-page #menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 0;
+        margin: 0;
+      }
+      .cv-page #menu li { float: none; }
+      .cv-page #menu li a { display: block; }
+      .cv-content { padding-left: 0; }
+      .cv-top { grid-template-columns: minmax(0, 1fr) 260px; gap: 28px; }
+    }
+
+    @media (max-width: 800px) {
+      .cv-page .container { width: calc(100% - 32px); }
+      .cv-page #wrapper { padding: 3em 0; }
+      .cv-page #logo h1 { font-size: 2em; }
+      .cv-top { grid-template-columns: minmax(0, 1fr); }
+      .cv-photo { grid-row: 1; width: 240px; justify-self: center; }
+      .cv-details { grid-template-columns: 135px minmax(0, 1fr); gap: 4px 12px; }
+      .cv-list li { grid-template-columns: minmax(0, 1fr); margin-bottom: 16px; }
+      .cv-date { font-weight: bold; }
+    }
+
+    @media (max-width: 420px) {
+      .cv-details { grid-template-columns: minmax(0, 1fr); row-gap: 0; }
+      .cv-details dd { margin-bottom: 10px; }
+    }
+  </style>
 </head>
-<body>
-<div id="header-wrapper2">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="./index_en.html">Icchy's Activity Log</a></h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li class="active"><a href="./index_en.html" accesskey="1" title="">Home</a></li>
-				<li class="active"><a href="#" accesskey="2" title="">Profile</a></li>
-				<li class="active"><a href="./research.html" accesskey="3" title="">Research</a></li>
-				<li class="active"><a href="./publication.html" accesskey="4" title="">Publication</a></li>
-				<li class="active"><a href="./photoFY2020.html" accesskey="5" title="">Photo</a></li>
-				<li class="active"><a href="./access.html" accesskey="6" title="">Access</a></li>
-				<li class="active"><a href="./link.html" accesskey="7" title="">Link</a></li>
-			</ul>
-		</div>
-	</div>
-	<!--
-	<div id="banner" class="container">
-		<div class="title">
-			<h2>Icchy's Activity Log Book!</h2>
-			<span class="byline"></span>
-		</div>
-		<ul class="actions">
-			<li><a href="#" class="button">English</a></li>
-		</ul>
-	</div>
-	-->
-</div>
-<div id="wrapper">
-	<div id="three-column" class="container">
-		<div class="title">
-			<h2>CV</h2>
-			<span class="byline">What's about Yoshiyasu ICHIKAWA?</span>
-		</div>
-		<div id="wrapper2">
-		<p style="text-align:left;">
-<img src="./images/profile2.jpg" width="340" height="454" alt="写真" align="right">
-Name： Yoshiyasu ICHIKAWA, Ph.D<br/><br/>
-Affiliation： Keio University, Graduate School of Science and Technology<br/><br/>
-Nationality： Japan<br/><br/>
-		  　　　　<!-- 言語：	日本語(標準語，熊本弁，長崎弁)，英語<br/> -->
-			Research interests：Thermofluid engineering（Flow measurement, Flow control）<br/><br/>
-		  　　　　<!-- 使用可能言語：Fortran90/95，Matlab，Python<br/> -->
-		  　　　　<!-- 趣味：自転車(Cannondale synapse carbon6 2014)，<br/> -->
-		  　　　　<!--　　　カメラ(Canon EOS D80，SONY Cybershot RX100V)，<br/> -->
-		  　　　　<!--　　　モータースポーツ(F1，SuperGT，たまにカート)，酒(ビール，ウイスキー，日本酒)，<br/> -->
-		  　　　　<!--　　　Mac(MacBook Pro 13-inch M1 2020，14-inch M3 Max 2023)，<br/> -->
-		  　　　　<!--　　　アイドルマスター(P歴17年目．星井美希，城ヶ崎美嘉担当)<br/> -->
-		  　　　　<!--　　　FC東京<br/>		 -->	
-			
-			Education：<br/>
-		  　　　　　　　	<!-- 2003.04〜2006.03: 長崎県 私立青雲高等学校<br/> -->
-			2011.03: B.S. in Engineering, Department of Mechanical Engineering, Tokyo University of Science<br/>
-			2013.03: M.S. in Engineering, Department of Mechanical Engineering, Tokyo University of Science<br/>
-			2017.09: Ph.D. in Engineering, Department of Mechanical Engineering, Tokyo University of Science<br/><br/>
-				 
-			Research Experience：<br/>
-		  　　　　　　　	<!-- 2013.04〜2014.04: トヨタ自動車(株)<br/> -->
-		  　　　　　　　	<!-- 2014.04〜2017.09: 東京理科大学大学院 工学研究科 機械工学専攻 博士後期課程<br/> -->
-			2016.04〜2017.09: Research Fellow (DC2), Japan Society of Promotion for Science (JSPS)<br/>
-			2017.10〜2018.03: Postdoctoral Research Fellow (PD), Japan Society of Promotion for Science (JSPS)<br/>
-			2018.04〜2021.03: Aerospace Project Research Associate, Aviation Technology Directorate, Japan Aerospace Exploration Agency (JAXA)<br/>
-			2021.04〜2026.03: Assistant Professor, Department of Mechanical Engineering, Tokyo University of Science<br/>
-			2024.10〜2025.03: Visiting Scholar, Waterloo Institute for Nanotechnology, University of Waterloo<br/>
-			2026.04〜: Project Assistant Professor, Graduate School of Science and Technology, Keio University<br/><br/>
-	
-		  　　　　<!-- 所属学会：日本機械学会，日本伝熱学会，日本流体力学会，可視化情報学会，APS<br/> -->
-<!-- 
-			<table class="cv-table">
-<tr>
-    <td class="label">Name</td>
-    <td class="colon">:</td>
-    <td class="value">Yoshiyasu ICHIKAWA</td>
-    <td rowspan="20">
-        <img src="./images/profile2.jpg" width="340" alt="写真">
-    </td>
-</tr>
+<body class="cv-page">
+  <div id="header-wrapper2">
+    <div id="header" class="container">
+      <div id="logo">
+        <h1><a href="./index_en.html">Icchy's Activity Log</a></h1>
+      </div>
+      <nav id="menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="./index_en.html" accesskey="1">Home</a></li>
+          <li class="active"><a href="#" accesskey="2" aria-current="page">Profile</a></li>
+          <li><a href="./research.html" accesskey="3">Research</a></li>
+          <li><a href="./publication.html" accesskey="4">Publication</a></li>
+          <li><a href="./photoFY2020.html" accesskey="5">Photo</a></li>
+          <li><a href="./access.html" accesskey="6">Access</a></li>
+          <li><a href="./link.html" accesskey="7">Link</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-<tr>
-    <td class="label">Degree</td>
-    <td class="colon">:</td>
-    <td class="value">Ph.D. in Engineering</td>
-</tr>
+  <main id="wrapper">
+    <div id="three-column" class="container">
+      <div class="title">
+        <h2>CV</h2>
+        <span class="byline">About Yoshiyasu ICHIKAWA</span>
+      </div>
 
-<tr>
-    <td class="label">Affiliation</td>
-    <td class="colon">:</td>
-    <td class="value">Graduate School of Science and Technology, Keio University</td>
-</tr>
+      <div class="cv-content">
+        <div class="cv-top">
+          <div>
+            <dl class="cv-details">
+              <dt>Name</dt>
+              <dd>Yoshiyasu ICHIKAWA</dd>
+              <dt>Degree</dt>
+              <dd>Ph.D. in Engineering</dd>
+              <dt>Affiliation</dt>
+              <dd>Graduate School of Science and Technology, Keio University</dd>
+              <dt>Nationality</dt>
+              <dd>Japanese</dd>
+              <dt>Research interests</dt>
+              <dd>Thermofluid engineering (Flow measurement, Flow control)</dd>
+            </dl>
 
-<tr>
-    <td class="label">Language</td>
-    <td class="colon">:</td>
-    <td class="value">Japanese, English</td>
-</tr>
-</table> -->
-		  　　　　
-		</p>
-	<!--	</div>-->
+            <section class="cv-section" aria-labelledby="education-title">
+              <h3 id="education-title">Education</h3>
+              <ul class="cv-list cv-education">
+                <li>
+                  <span class="cv-date">2011.03</span>
+                  <span>B.S. in Engineering<br>Department of Mechanical Engineering, Tokyo University of Science</span>
+                </li>
+                <li>
+                  <span class="cv-date">2013.03</span>
+                  <span>M.S. in Engineering<br>Department of Mechanical Engineering, Tokyo University of Science</span>
+                </li>
+                <li>
+                  <span class="cv-date">2017.09</span>
+                  <span>Ph.D. in Engineering<br>Department of Mechanical Engineering, Tokyo University of Science</span>
+                </li>
+              </ul>
+            </section>
+          </div>
 
-		<!--
-		<div class="boxA">
-			<p>自己紹介<br>
-			  Profile</p>
-			<a href="#" class="button button-alt">More</a>
-		</div>
-		<div class="boxB">
-			<p>研究業績<br>
-			  Research Activity</p>
-			<a href="#" class="button button-alt">More</a>
-		</div>
-		<div class="boxC">
-			<p>日々のつぶやき<br>
-			  Blog</p>
-			<a href="#" class="button button-alt">More</a>
-		</div>
-		-->
-	</div>
+          <img class="cv-photo" src="./images/profile2.jpg" width="340" height="454" alt="Portrait of Yoshiyasu Ichikawa">
+        </div>
 
-</div>
+        <section class="cv-section" aria-labelledby="experience-title">
+          <h3 id="experience-title">Research Experience</h3>
+          <ul class="cv-list">
+            <li>
+              <span class="cv-date">2016.04–2017.09</span>
+              <span>Research Fellow (DC2)<br>Japan Society for the Promotion of Science (JSPS)</span>
+            </li>
+            <li>
+              <span class="cv-date">2017.10–2018.03</span>
+              <span>Postdoctoral Research Fellow (PD)<br>Japan Society for the Promotion of Science (JSPS)</span>
+            </li>
+            <li>
+              <span class="cv-date">2018.04–2021.03</span>
+              <span>Aerospace Project Research Associate<br>Aviation Technology Directorate, Japan Aerospace Exploration Agency (JAXA)</span>
+            </li>
+            <li>
+              <span class="cv-date">2021.04–2026.03</span>
+              <span>Assistant Professor<br>Department of Mechanical Engineering, Tokyo University of Science</span>
+            </li>
+            <li>
+              <span class="cv-date">2024.10–2025.03</span>
+              <span>Visiting Scholar<br>Waterloo Institute for Nanotechnology, University of Waterloo</span>
+            </li>
+            <li>
+              <span class="cv-date">2026.04–Present</span>
+              <span>Project Assistant Professor<br>Graduate School of Science and Technology, Keio University</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
 
-<!--
-<div id="welcome">
-	<div class="container">
-		<div class="title">
-			<h2>更新情報</h2>
-			<span class="byline">What's New?</span>
-		</div>
-		<p>
-		  <center><IFRAME SRC="./new.html" HEIGHT="500" WIDTH="800" ALIGN="center" SCROLLING="yes"></IFRAME></center>
-	<br>
-		  </p>
-		<!-- <p>This is <strong>Assembly</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
-		<ul class="actions">
-			<li><a href="#" class="button">Etiam posuere</a></li>
-		</ul>
-	</div>
-</div>
--->
-<div id="copyright" class="container">
-	<p>&copy; Yoshiyasu Ichikawa, 2016,  All rights reserved. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-</div>
+  <div id="copyright" class="container">
+    <p>&copy; Yoshiyasu Ichikawa, 2016, All rights reserved. | Design by <a href="https://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+  </div>
 </body>
 </html>
